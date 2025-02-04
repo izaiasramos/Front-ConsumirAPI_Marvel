@@ -5,7 +5,7 @@ export default {
   async mounted() {
     console.log('Making request to:', 'http://localhost:3003/characters'); // Verifique se a URL está correta
     console.log('Component mounted, making request...'); // Verifique se isso aparece no console
-
+  
     try {
       const response = await axios.get('http://localhost:3003/characters');
       console.log('response : ',response.data);
